@@ -1,4 +1,4 @@
-## Sytian Build Scripts
+## Custom Build Scripts
 
 Compile SASS to CSS, minify javascript and optimize images.
 
