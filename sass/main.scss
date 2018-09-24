@@ -1,0 +1,62 @@
+// Import sass files written by other dev that you want to re-used
+// e.g. bootstrap
+
+// Variables and mixins
+@import 'variables';
+@import 'mixins';
+
+// Feel free to include other partials here e.g. (partials are named with _ prefix)
+// ----------------------------------------------------
+// @import 'typography'
+// @import 'media'
+// @import 'print'
+// @import 'tables'
+// @import 'navs'
+// @import 'forms'
+// @import 'buttons'
+
+// Your styles goes here
+// ----------------------------------------------------
+
+@media screen {
+    body {
+    	margin: 0 15px;
+    	color: $text-color;
+    	background-color: $body-bg;
+    }
+    .green {
+		color: #369F0E;
+	}
+	.header-title {
+		width: 20%;
+		padding-left: 40%;
+	}
+}
+
+// @media only screen and (min-width: 480px)
+@include respond-to(xs) { 
+	body {
+		width: 100%;
+	}
+}
+
+// @media only screen and (min-width: 768px)
+@include respond-to(small) {
+	body {
+		width: 100%;
+	}
+}
+
+// @media only screen and (min-width: 992px)
+@include respond-to(medium) {
+	body {
+		width: 100%;
+	}
+}
+
+// @media only screen and (min-width: 1200px)
+@include respond-to(large) {
+	body {
+		width: 1200px;
+	}
+}
